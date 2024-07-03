@@ -1,0 +1,191 @@
+$background-color: #282C33;
+$gray-color: #ABB2BF;
+$primary-color: #C778DD;
+$white-color: #FFFFFF;
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background-color: $background-color;
+  user-select: none;
+  font-family: "Fira Code";
+}
+
+.header {
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+
+    .header-logo {
+      width: 70px;
+      height: 70px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      span {
+        color: $white-color;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  div {
+    width: auto;
+    display: flex;
+    color: #c2c0c0;
+
+    span {
+      color: $primary-color;
+    }
+
+    a {
+      white-space: nowrap;
+      text-decoration: none;
+      color: $gray-color;
+      width: auto;
+      display: flex;
+      font-weight: 100;
+      font-size: 19px;
+      margin-right: 4%;
+    }
+
+    :hover {
+      color: $white-color;
+    }
+
+    a.active {
+      color: $white-color;
+    }
+  }
+
+  .side {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 4%;
+
+    #hr {
+      margin-bottom: 10px;
+      background-color: $white-color;
+      width: 1px;
+      height: 400px;
+    }
+
+    a {
+      margin-bottom: 15px;
+    }
+  }
+}
+
+main {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 7%;
+
+  .h-main {
+    display: flex;
+
+    .h-main-section-text {
+      h2 {
+        font-size: 30px;
+        color: $white-color;
+
+        span {
+          color: $primary-color;
+        }
+      }
+
+      p {
+        color: $gray-color;
+        margin-top: 40px;
+        width: 70%;
+
+        span {
+          color: $white-color
+        }
+      }
+
+      button {
+        background-color: transparent;
+        color: $white-color;
+        font-size: 18px;
+        width: 180px;
+        height: 36px;
+        border: 1px solid $primary-color;
+        transition: 0.5s;
+        margin-top: 10px;
+      }
+
+      button:hover {
+        background-color: $primary-color;
+      }
+    }
+
+    .h-main-section-image {
+      width: 40%;
+      position: relative;
+
+      .h-images {
+        position: relative;
+        height: 186%;
+
+        .main-img {
+          position: relative;
+          top: 0;
+          z-index: 1;
+          width: 100%;
+        }
+
+        .pattern-img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 0;
+          width: 50%;
+        }
+
+        .current-work {
+          display: flex;
+          justify-content: center;
+          border: 1px solid $primary-color;
+          width: 100%;
+
+          position: absolute;
+
+          p {
+            color: $gray-color;
+
+            span {
+              color: $white-color;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
