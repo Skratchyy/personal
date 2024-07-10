@@ -1,8 +1,8 @@
-$background-color: #282C33;
-$gray-color: #ABB2BF;
-$primary-color: #C778DD;
-$white-color: #FFFFFF;
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+$background-color: #282c33;
+$gray-color: #abb2bf;
+$primary-color: #c778dd;
+$white-color: #ffffff;
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap");
 
 html,
 body,
@@ -16,7 +16,6 @@ body,
 }
 
 .header {
-
   width: 100%;
   display: flex;
   justify-content: center;
@@ -125,7 +124,7 @@ main {
         width: 70%;
 
         span {
-          color: $white-color
+          color: $white-color;
         }
       }
 
@@ -151,8 +150,6 @@ main {
 
       .h-images {
         position: relative;
-        height: 186%;
-
         .main-img {
           position: relative;
           top: 0;
@@ -178,14 +175,91 @@ main {
 
           p {
             color: $gray-color;
-
+            display: flex;
+            justify-content: center;
+            align-items: center;
             span {
               color: $white-color;
+            }
+            .block {
+              width: 10px;
+              height: 10px;
+              background-color: $primary-color;
+              margin-right: 10px;
             }
           }
         }
       }
-
     }
   }
+  .h-quote {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    position: relative;
+    margin-left: 20%;
+    p {
+      position: relative;
+      align-self: flex-end;
+      padding: 30px;
+      width: 100%;
+      border: 1px solid $white-color;
+      text-align: center;
+      color: $white-color;
+      font-size: 30px;
+      margin-bottom: 0;
+
+      #quote-top {
+        width: 30px;
+        position: absolute;
+        top: -10px;
+        left: 20px;
+      }
+      #quote-bottom {
+        width: 30px;
+        position: absolute;
+        bottom: -13px;
+        right: 20px;
+      }
+    }
+    .quote-author {
+      margin-top: 0;
+      width: 30%;
+      border-top: 0;
+      align-self: flex-end;
+    }
+  }
+}
+
+.heading {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  h3 {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    color: $white-color;
+    span {
+      color: $primary-color;
+      margin-right: 10px;
+    }
+    div {
+      background-color: $primary-color;
+      height: 1px;
+      margin-left: 30px;
+    }
+  }
+}
+.view-more {
+  color: $white-color;
+  text-decoration: underline;
+}
+.view-more:hover {
+  color: $primary-color;
+  cursor: pointer;
 }
