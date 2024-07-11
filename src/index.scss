@@ -128,20 +128,7 @@ main {
         }
       }
 
-      button {
-        background-color: transparent;
-        color: $white-color;
-        font-size: 18px;
-        width: 180px;
-        height: 36px;
-        border: 1px solid $primary-color;
-        transition: 0.5s;
-        margin-top: 10px;
-      }
-
-      button:hover {
-        background-color: $primary-color;
-      }
+      
     }
 
     .h-main-section-image {
@@ -194,6 +181,21 @@ main {
         }
       }
     }
+  }
+
+  .main-button {
+    background-color: transparent;
+    color: $white-color;
+    font-size: 18px;
+    width: 180px;
+    height: 36px;
+    border: 1px solid $primary-color;
+    transition: 0.5s;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .main-button:hover {
+    background-color: $primary-color;
   }
 
   .h-quote {
@@ -358,5 +360,37 @@ main {
       width: 50%;
     }
 
+  }
+}
+
+.h-about{
+  margin-top: 70px;
+  .content{
+    display: flex;
+    justify-content: space-between;
+  }
+  .desc {
+    width: 50%;
+    p{
+      width: 80%;
+      color: $gray-color;
+      margin-bottom: 50px;
+    }
+  }
+  .image{
+    width: 50%;
+    position: relative;
+  }
+}
+
+.dot-pattern {
+  width: 120px;
+  display: grid;
+  position: absolute;
+  grid-template-columns: auto auto auto auto auto;
+  span {
+    color: $gray-color;
+    font-size: 37px;
+    line-height: 22px;
   }
 }

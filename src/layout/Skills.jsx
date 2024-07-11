@@ -1,7 +1,7 @@
 import React from "react";
 import Title from "../components/Title";
 import Card from "../components/Card"
-function Projects() {
+function Skills() {
     return (
         <section className="h-skills">
             <Title title={"skills"} width={"300px"} />
@@ -22,4 +22,4 @@ function Projects() {
     );
 }
 
-export default Projects;
+export default Skills;
