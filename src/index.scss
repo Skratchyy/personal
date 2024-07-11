@@ -236,7 +236,7 @@ main {
 
 .heading {
   display: flex;
-  width: 80%;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   h3 {
@@ -262,4 +262,41 @@ main {
 .view-more:hover {
   color: $primary-color;
   cursor: pointer;
+}
+
+.p-card {
+  width: 30%;
+  margin: 0;
+
+  .img{
+    border: 1px solid $white-color;
+    border-bottom: 0;
+    img{
+      border-bottom: 1px solid $white-color;
+      width: 100%;
+    }
+  }
+  .title{
+    border: 1px solid $white-color;
+    border-top: 0;  
+    p{
+      margin-top: 0px;
+      color: $gray-color;
+    }
+  }
+  .desc{
+    border: 1px solid $white-color;
+    border-top: 0;
+    p {
+      margin-top: 0;
+      color: $gray-color;
+    }
+  }
+}
+
+.h-projects{
+  .cards{
+    display: flex;
+    justify-content: space-between;
+  }
 }

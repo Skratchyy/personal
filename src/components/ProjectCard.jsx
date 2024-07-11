@@ -4,13 +4,13 @@ function ProjectCars() {
   return (
     <div className="p-card">
       <div className="img">
-        <img src="" alt="" />
+        <img src="/logo.png" alt="" />
       </div>
       <div className="title">
-        <p></p>
+        <p>Front-Running BOT</p>
       </div>
       <div className="desc">
-        <p></p>
+        <p>I built a front running bot that does a sandwich attacks on ethereum network</p>
       </div>
     </div>
   );
