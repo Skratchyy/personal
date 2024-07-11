@@ -150,6 +150,7 @@ main {
 
       .h-images {
         position: relative;
+
         .main-img {
           position: relative;
           top: 0;
@@ -178,9 +179,11 @@ main {
             display: flex;
             justify-content: center;
             align-items: center;
+
             span {
               color: $white-color;
             }
+
             .block {
               width: 10px;
               height: 10px;
@@ -192,6 +195,7 @@ main {
       }
     }
   }
+
   .h-quote {
     margin-top: 10%;
     display: flex;
@@ -201,6 +205,7 @@ main {
     width: 60%;
     position: relative;
     margin-left: 20%;
+
     p {
       position: relative;
       align-self: flex-end;
@@ -218,6 +223,7 @@ main {
         top: -10px;
         left: 20px;
       }
+
       #quote-bottom {
         width: 30px;
         position: absolute;
@@ -225,6 +231,7 @@ main {
         right: 20px;
       }
     }
+
     .quote-author {
       margin-top: 0;
       width: 30%;
@@ -239,15 +246,18 @@ main {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+
   h3 {
     display: flex;
     align-self: flex-start;
     align-items: center;
     color: $white-color;
+
     span {
       color: $primary-color;
       margin-right: 10px;
     }
+
     div {
       background-color: $primary-color;
       height: 1px;
@@ -255,10 +265,12 @@ main {
     }
   }
 }
+
 .view-more {
   color: $white-color;
   text-decoration: underline;
 }
+
 .view-more:hover {
   color: $primary-color;
   cursor: pointer;
@@ -268,35 +280,83 @@ main {
   width: 30%;
   margin: 0;
 
-  .img{
+  .img {
     border: 1px solid $white-color;
     border-bottom: 0;
-    img{
+    width: 100%;
+
+    img {
       border-bottom: 1px solid $white-color;
       width: 100%;
     }
   }
-  .title{
+
+  .title {
     border: 1px solid $white-color;
-    border-top: 0;  
-    p{
+    width: 100%;
+    border-top: 0;
+
+    p {
       margin-top: 0px;
       color: $gray-color;
     }
   }
-  .desc{
+
+  .header {
+    width: 100%;
     border: 1px solid $white-color;
     border-top: 0;
+
+    p {
+      margin-top: 0px;
+      color: $white-color;
+    }
+  }
+
+  .desc {
+    width: 100%;
+    border: 1px solid $white-color;
+    border-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     p {
       margin-top: 0;
       color: $gray-color;
+      margin: 7px;
     }
   }
 }
 
-.h-projects{
-  .cards{
+.h-projects {
+  margin-top: 70px;
+  .cards {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+.h-skills {
+  margin-top: 70px;
+  .content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    .patterns {
+      width: 50%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .skill {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      width: 50%;
+    }
+
   }
 }

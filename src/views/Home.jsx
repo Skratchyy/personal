@@ -1,6 +1,7 @@
 import React from "react";
 import Quote from "../layout/Quote";
 import Projects from "../layout/Projects";
+import Skills from "../layout/Skills"
 
 function Home() {
   return (
@@ -32,6 +33,7 @@ function Home() {
       </section>
       <Quote />
       <Projects />
+      <Skills/>
     </main>
   );
 }

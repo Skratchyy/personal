@@ -10,9 +10,9 @@ function Title({ title, width, url }) {
         <div style={{ width: width }} />
       </h3>
       <div className="link">
-        <Link className="view-more" to={url}>
+        {url ? <Link className="view-more" to={url}>
           view all
-        </Link>
+        </Link> : <></> }
       </div>
     </div>
   );
