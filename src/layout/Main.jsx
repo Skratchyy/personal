@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from "../components/Button";
+import Dots from '../components/Dots';
 function Main() {
   return (
     <section className="h-main">
@@ -15,6 +16,7 @@ function Main() {
         </div>
         <div className="h-main-section-image">
           <div className="h-images">
+            <Dots bottom={"30px"} right={"50px"}/>
             <img className="main-img" src="/main-image.png" alt="" />
             <img className="pattern-img" src="/background-pattern.png" alt="" />
             <div className="current-work">

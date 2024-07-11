@@ -128,7 +128,7 @@ main {
         }
       }
 
-      
+
     }
 
     .h-main-section-image {
@@ -194,6 +194,7 @@ main {
     margin-top: 10px;
     cursor: pointer;
   }
+
   .main-button:hover {
     background-color: $primary-color;
   }
@@ -333,6 +334,7 @@ main {
 
 .h-projects {
   margin-top: 70px;
+
   .cards {
     display: flex;
     justify-content: space-between;
@@ -341,6 +343,7 @@ main {
 
 .h-skills {
   margin-top: 70px;
+
   .content {
     width: 100%;
     display: flex;
@@ -363,21 +366,25 @@ main {
   }
 }
 
-.h-about{
+.h-about {
   margin-top: 70px;
-  .content{
+
+  .content {
     display: flex;
     justify-content: space-between;
   }
+
   .desc {
     width: 50%;
-    p{
+
+    p {
       width: 80%;
       color: $gray-color;
       margin-bottom: 50px;
     }
   }
-  .image{
+
+  .image {
     width: 50%;
     position: relative;
   }
@@ -387,10 +394,73 @@ main {
   width: 120px;
   display: grid;
   position: absolute;
+  z-index: 99;
   grid-template-columns: auto auto auto auto auto;
+
   span {
     color: $gray-color;
     font-size: 37px;
     line-height: 22px;
+  }
+}
+
+.h-contact {
+  height: 40vh;
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+
+    .desc {
+      width: 50%;
+
+      p {
+        width: 80%;
+        color: $gray-color;
+
+      }
+    }
+
+    .links {
+      width: 50%;
+      display: flex;
+      align-self: flex-end;
+      justify-content: flex-end;
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        height: 30%;
+        border: 1px solid $white-color;
+
+        p {
+          color: $white-color;
+        }
+
+        .url {
+          width: 60%;
+          display: flex;
+          align-items: center;
+
+          a {
+            color: $gray-color;
+            text-decoration: none;
+            margin-right: 5px;
+          }
+          a:hover {
+            color:$white-color
+          }
+
+          p {
+            color: $gray-color;
+
+          }
+        }
+      }
+    }
   }
 }

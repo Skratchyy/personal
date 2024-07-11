@@ -3,8 +3,9 @@ import Quote from "../layout/Quote";
 import Projects from "../layout/Projects";
 import Skills from "../layout/Skills"
 import About from "../layout/About";
-import Button from "../components/Button";
+
 import Main from "../layout/Main";
+import Contact from "../layout/Contact";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <Projects />
       <Skills />
       <About />
+      <Contact />
     </main>
   );
 }
