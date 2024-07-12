@@ -127,8 +127,6 @@ main {
           color: $white-color;
         }
       }
-
-
     }
 
     .h-main-section-image {
@@ -362,7 +360,6 @@ main {
       grid-template-columns: auto auto auto;
       width: 50%;
     }
-
   }
 }
 
@@ -418,7 +415,6 @@ main {
       p {
         width: 80%;
         color: $gray-color;
-
       }
     }
 
@@ -452,14 +448,73 @@ main {
             margin-right: 5px;
           }
           a:hover {
-            color:$white-color
+            color: $white-color;
           }
 
           p {
             color: $gray-color;
-
           }
         }
+      }
+    }
+  }
+}
+
+footer {
+  height: 40vh;
+  border-top: 1px solid $gray-color;
+  margin-top: 10%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  p {
+    color: $gray-color;
+  }
+  .f-main {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    .f-1 {
+      color: $white-color;
+      p {
+        color: $white-color;
+      }
+      .ct {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+          color: $white-color;
+          font-size: 20px;
+          font-weight: 700;
+        }
+        img {
+          width: 40px;
+        }
+        a {
+          color: $gray-color;
+          text-decoration: none;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+  .f-2 {
+    h3 {
+      color: $white-color;
+      font-family: "Fira Code";
+      font-weight: 500;
+    }
+    .media {
+      a {
+        color: $gray-color;
+        margin-right: 5px;
+        font-size: 18px;
+      }
+      a:hover {
+        color: $white-color;
       }
     }
   }
