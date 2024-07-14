@@ -2,7 +2,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-function Footer() {
+import language from "../language/language.json";
+function Footer({ currentLanguage }) {
+  const langData = language[currentLanguage];
   return (
     <footer>
       <section className="f-main">
@@ -12,10 +14,10 @@ function Footer() {
             <p>skratchy</p>
             <a href="#">gabichvadzezura@gmail.com</a>
           </div>
-          <p>Software Developer</p>
+          <p>{langData.proffesion}</p>
         </div>
         <div className="f-2">
-          <h3>Media</h3>
+          <h3>{langData.media}</h3>
           <div className="media">
             <a href="#">
               <FontAwesomeIcon icon={faGithub} />
@@ -26,7 +28,7 @@ function Footer() {
           </div>
         </div>
       </section>
-      <p>© Copyright 2022. Made by Skratchy</p>
+      <p>{langData.copyRight}</p>
     </footer>
   );
 }

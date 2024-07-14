@@ -1,35 +1,37 @@
-import React from 'react'
+import React from "react";
 import Button from "../components/Button";
-import Dots from '../components/Dots';
-function Main() {
+import Dots from "../components/Dots";
+import language from "../language/language.json";
+function Main({ currentLanguage }) {
+  const langData = language[currentLanguage];
+
   return (
     <section className="h-main">
-        <div className="h-main-section-text">
-          <h2>
-            Skratchy is a <span>Software Developer</span>
-          </h2>
-          <p>
-            Take a look and leave feedback by following my linked in page.{" "}
-            <span>{"<3"}</span>
-          </p>
-          <Button>Contact Me !!</Button>
-        </div>
-        <div className="h-main-section-image">
-          <div className="h-images">
-            <Dots bottom={"30px"} right={"50px"}/>
-            <img className="main-img" src="/main-image.png" alt="" />
-            <img className="pattern-img" src="/background-pattern.png" alt="" />
-            <div className="current-work">
-              <p>
-                <span className="block"></span>
-                Currently Working on
-                <span>&nbsp;TON</span>
-              </p>
-            </div>
+      <div className="h-main-section-text">
+        <h2 dangerouslySetInnerHTML={{ __html: langData.header }} />
+        <p dangerouslySetInnerHTML={{ __html: langData.description }} />
+        <Button>{langData.contact}</Button>
+      </div>
+      <div className="h-main-section-image">
+        <div className="h-images">
+          <Dots bottom={"30px"} right={"50px"} />
+          <img className="main-img" src="/main-image.png" alt="" />
+          <img
+            className="pattern-img"
+            src="src\assets\background-pattern.png"
+            alt=""
+          />
+          <div className="current-work">
+            <p>
+              <span className="block"></span>
+              {langData.currentWorkPrefix}
+              <span>&nbsp;TON</span>
+            </p>
           </div>
         </div>
-      </section>
-  )
+      </div>
+    </section>
+  );
 }
 
-export default Main
+export default Main;

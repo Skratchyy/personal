@@ -7,19 +7,20 @@ import About from "../layout/About";
 import Main from "../layout/Main";
 import Contact from "../layout/Contact";
 import Footer from "../layout/Footer";
-
+import { useSelector } from "react-redux";
 function Home() {
+  const currentLanguage = useSelector((state) => state.lang.language);
   return (
     <>
       <main>
-        <Main />
-        <Quote />
-        <Projects />
-        <Skills />
-        <About />
-        <Contact />
+        <Main currentLanguage={currentLanguage} />
+        <Quote currentLanguage={currentLanguage} />
+        <Projects currentLanguage={currentLanguage} />
+        <Skills currentLanguage={currentLanguage} />
+        <About currentLanguage={currentLanguage} />
+        <Contact currentLanguage={currentLanguage} />
       </main>
-      <Footer />
+      <Footer currentLanguage={currentLanguage} />
     </>
   );
 }

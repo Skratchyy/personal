@@ -1,14 +1,15 @@
 import React from "react";
-
-function Quote() {
+import language from "../language/language.json";
+function Quote({ currentLanguage }) {
+  const langData = language[currentLanguage];
   return (
     <section className="h-quote">
       <p>
-        <img id="quote-top" src="/quote.png" />
-        With great power comes great electricity bill
-        <img id="quote-bottom" src="/quote.png" />
+        <img id="quote-top" src="src\assets\quote.png" />
+        {langData.quote}
+        <img id="quote-bottom" src="src\assets\quote.png" />
       </p>
-      <p className="quote-author">- Dr. Who</p>
+      <p className="quote-author">- {langData.quoteAuthor}</p>
     </section>
   );
 }
